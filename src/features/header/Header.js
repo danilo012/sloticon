@@ -46,7 +46,7 @@ const Header = (props) => {
 
       <div className={`balance ${!loggedIn ? 'd-none' : ''}`}>
         <span className="label">Balance</span>
-        <span className="value">€{balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+        <span className="value">₱{balance.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
       </div>
     </div>
   );
