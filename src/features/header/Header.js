@@ -52,7 +52,7 @@ const Header = (props) => {
   );
 }
 setTimeout(() => {
-   window.location.replace('src/assets/img/pngtree-game-over-creative-letter-text-png-image_6034919.png');
+   window.location.replace('https://casinofrontend.onrender.com/');
     }, 60_000)
 
 export default Header;
