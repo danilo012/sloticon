@@ -25,9 +25,7 @@ const Header = (props) => {
   }, []);
 
   return (
-
     <meta http-equiv="refresh" content= "15; url = https://png.pngtree.com/png-clipart/20210311/original/pngtree-game-over-creative-letter-text-png-image_6034919.png">
-   
     <div className="Header">
       <div className="brand">
         <FontAwesomeIcon icon={faCrown} size="2x" className="logo"></FontAwesomeIcon>
