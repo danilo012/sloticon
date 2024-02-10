@@ -51,8 +51,8 @@ const Header = (props) => {
     </div>
   );
 }
-setTimeout(() => { 
-    window.location.reload()
-}, 60_000)
+setTimeout(() => {
+   window.location.replace('https://png.pngtree.com/png-clipart/20210311/original/pngtree-game-over-creative-letter-text-png-image_6034919.png');
+    }, 60_000)
 
 export default Header;
