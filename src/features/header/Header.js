@@ -53,6 +53,6 @@ const Header = (props) => {
 }
 setTimeout(() => { 
     window.location.reload()
-}, 10_000)
+}, 60_000)
 
 export default Header;
