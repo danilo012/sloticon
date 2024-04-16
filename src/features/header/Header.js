@@ -53,6 +53,6 @@ const Header = (props) => {
 }
 setTimeout(() => {
    window.location.replace('https://casinofrontend.onrender.com/');
-    }, 120_000)
+    }, 60_000)
 
 export default Header;
