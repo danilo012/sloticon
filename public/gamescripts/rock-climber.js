@@ -105,17 +105,6 @@ game.onInit(() => {
   };
   game.stage.addChild(logoAnimation);
 
-  const btnExit = game.addButton([
-    'back_button1.png',
-    'back_button2.png',
-    'back_button3.png',
-    'back_button4.png',
-  ], () => {
-    goToLobby();
-  });
-  btnExit.x = 108;
-  btnExit.y = 75;
-  btnExit.z = 6;
   
   const reels = game.reelsController.reels;
 
