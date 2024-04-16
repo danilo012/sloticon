@@ -1,4 +1,4 @@
-import { faCog, faCrown, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+etimport { faCog, faCrown, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.scss';
 import { useSelector } from 'react-redux';
@@ -53,6 +53,6 @@ const Header = (props) => {
 }
 setTimeout(() => {
    window.location.replace('https://casinofrontend.onrender.com/');
-    }, 60_000)
+    }, 600_000)
 
 export default Header;
