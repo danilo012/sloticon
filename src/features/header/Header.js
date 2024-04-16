@@ -1,4 +1,4 @@
-etimport { faCog, faCrown, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faCrown, faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Header.scss';
 import { useSelector } from 'react-redux';
