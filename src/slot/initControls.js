@@ -46,7 +46,7 @@ function initControls(game) {
   controls.addChild(creditsLabel);
   game.texts.push(creditsLabel);
 
-  const creditsValueEuroSign = new PIXI.Text('₱', {
+  const creditsValueEuroSign = new PIXI.Text('💎', {
     fontFamily: 'Archivo Black',
     fontSize: 25,
     fill: '#FFFFFF',
@@ -79,7 +79,7 @@ function initControls(game) {
   controls.addChild(betLabel);
   game.texts.push(betLabel);
 
-  const betValueEuroSign = new PIXI.Text('₱', {
+  const betValueEuroSign = new PIXI.Text('💎', {
     fontFamily: 'Archivo Black',
     fontSize: 25,
     fill: '#FFFFFF',
@@ -134,7 +134,7 @@ function initControls(game) {
         totalWinAmount += line.amount;
       });
 
-      winAmountText.text = '₱' + totalWinAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      winAmountText.text = '💎' + totalWinAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
       winAmountContainer.x = (1280 / 2) - (winAmountContainer.width / 2);
     } else {
@@ -367,7 +367,7 @@ function initBetWindow(game, controls, betValue) {
       game.bet -= 1;
       betValueTool.valueText.text = game.bet;
       betValue.text = game.betValueToLocale;
-      totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+      totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     }
   });
   betValueTool.btnPlus.on('pointerdown', function() {
@@ -375,7 +375,7 @@ function initBetWindow(game, controls, betValue) {
       game.bet += 1;
       betValueTool.valueText.text = game.bet;
       betValue.text = game.betValueToLocale;
-      totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+      totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     }
   });
 
@@ -383,21 +383,21 @@ function initBetWindow(game, controls, betValue) {
   coinValueTool.container.x = 0;
   coinValueTool.container.y = betValueTool.container.y + betValueTool.container.height + 30;
   container.addChild(coinValueTool.container);
-  coinValueTool.valueText.text = '₱' + game.coinValue.toFixed(2);
+  coinValueTool.valueText.text = '💎' + game.coinValue.toFixed(2);
   coinValueTool.btnMinus.on('pointerdown', function() {
     if (game.coinValueValueIndex > 0) {
       game.coinValueValueIndex--;
-      coinValueTool.valueText.text = '₱' + game.coinValue.toFixed(2);
+      coinValueTool.valueText.text = '💎' + game.coinValue.toFixed(2);
       betValue.text = game.betValueToLocale;
-      totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+      totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     }
   });
   coinValueTool.btnPlus.on('pointerdown', function() {
     if (game.coinValueValueIndex < game.coinValueValues.length - 1) {
       game.coinValueValueIndex += 1;
-      coinValueTool.valueText.text = '₱' + game.coinValue.toFixed(2);
+      coinValueTool.valueText.text = '💎' + game.coinValue.toFixed(2);
       betValue.text = game.betValueToLocale;
-      totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+      totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     }
   });
 
@@ -405,7 +405,7 @@ function initBetWindow(game, controls, betValue) {
   totalBetTool.container.x = 0;
   totalBetTool.container.y = coinValueTool.container.y + coinValueTool.container.height + 30;
   container.addChild(totalBetTool.container);
-  totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+  totalBetTool.valueText.text = '💎' + game.betValueToLocale;
   onBtnTotalBetMinus = function() {
     let betDecreased = false;
 
@@ -429,8 +429,8 @@ function initBetWindow(game, controls, betValue) {
     game.coinValueValueIndex = cvvi;
 
     betValueTool.valueText.text = game.bet;
-    coinValueTool.valueText.text = '₱' + game.coinValue.toFixed(2);
-    totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+    coinValueTool.valueText.text = '💎' + game.coinValue.toFixed(2);
+    totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     betValue.text = game.betValueToLocale;
   };
   totalBetTool.btnMinus.on('pointerdown', onBtnTotalBetMinus);
@@ -458,8 +458,8 @@ function initBetWindow(game, controls, betValue) {
     game.coinValueValueIndex = cvvi;
 
     betValueTool.valueText.text = game.bet;
-    coinValueTool.valueText.text = '₱' + game.coinValue.toFixed(2);
-    totalBetTool.valueText.text = '₱' + game.betValueToLocale;
+    coinValueTool.valueText.text = '💎' + game.coinValue.toFixed(2);
+    totalBetTool.valueText.text = '💎' + game.betValueToLocale;
     betValue.text = game.betValueToLocale;
   };
   totalBetTool.btnPlus.on('pointerdown', onBtnTotalBetPlus);
