@@ -51,8 +51,5 @@ const Header = (props) => {
     </div>
   );
 }
-setTimeout(() => {
-   window.location.replace('https://casinofrontend.onrender.com/');
-    }, 1800_000)
 
 export default Header;
